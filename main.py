@@ -6,17 +6,14 @@ LETTERS = string.ascii_letters
 SYMBOLS = string.punctuation
 DIGITS = string.digits
 
-
 def generateUsername():
     generate_username = random.choices(LETTERS + DIGITS, k=8) # Generate random string for making one username 
-
     userName = "".join(generate_username)
-
+    
     return userName
 
 def generatePassword():
     generate_password = random.choices(LETTERS + DIGITS + SYMBOLS, k = 24)
-
     passWord = "".join(generate_password)
 
     return passWord
